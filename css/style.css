@@ -163,3 +163,54 @@ footer { border-top: 1px solid var(--line); color: var(--muted); text-align: cen
 .work-card.hidden {
     display: none;
 }
+/* Career Timeline */
+
+.timeline {
+    position: relative;
+    margin: 30px 0;
+    padding-left: 28px;
+    border-left: 2px solid var(--line);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+}
+
+.timeline-date {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.timeline-content {
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.timeline-content h3 {
+    margin: 0 0 8px;
+    color: var(--text);
+}
+
+.timeline-content p {
+    margin: 0;
+    color: var(--muted);
+}
